@@ -4,6 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo ' Build Demo Application'
+        sh 'sh `mvn  compile` '
       }
     }
 
